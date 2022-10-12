@@ -1,7 +1,6 @@
 :root {
   --color-1: hsl(50 100% 80%);
   --color-font: hsl(0 0% 20%);
-  --heading-line-height: 1;
   background-color: #202020;
   font-family: Roboto, sans-serif;
   padding: 3vw;
@@ -17,7 +16,7 @@
 
 
 /* WINDOW HEADER */
-.window-header {
+.window--header {
   background-color: hsl(220 10% 50%);
   height: 20px;
   border-radius: 10px 10px 0 0;
@@ -56,15 +55,18 @@
 }
 /* WINDOW HEADER - END */
 
-.window-content {
-  padding: .5em 2.5em;
-  line-height: 1.5;
+.window--main-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em 2vw;
+}
+
+.window--main {
   max-width: 75ch;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
+.window--main *:last-child {
+  margin-bottom: 0;
 }
 
 h1, h2 {
@@ -74,16 +76,18 @@ h1, h2 {
 h1 {
   font-size: 3rem;
   text-align: center;
-  line-height: var(--heading-line-height);
+  margin: 0;
+}
+
+h1 + h2 {
+  margin-top: min(5vw, 1rem);
 }
 
 /* Heading 1 Shadow */
 h1::before {
   content: "";
   background-color: var(--color-1);
-  width: 12.5ch;
   height: .5em;
-  max-width: 40vw;
   border-radius: .1em;
   position: absolute;
   margin: .5em 0 0 .1em;
@@ -93,7 +97,6 @@ h1::before {
 
 h2 {
   font-size: 2rem;
-  line-height: var(--heading-line-height);
   margin-top: 1.2em;
   margin-bottom: .5em;
   
@@ -103,7 +106,6 @@ h2 {
 h2::before {
   content: "";
   background-color: var(--color-1);
-  width:10ch;
   height: .5em;
   max-width: 40vw;
   border-radius: .1em;
@@ -113,7 +115,7 @@ h2::before {
 }
 /* Heading 2 Shadow - END */
 
-.window-content img {
+.window--main img {
   max-width: 100%;
   max-height: 20em;
   width: 100%;
@@ -138,16 +140,15 @@ ol>li::marker {
   font-weight: bold;
 }
 
-footer {
+.window--footer {
   background-color: var(--color-1);
   font-weight: bold;
   padding: .5em 2em;
   display: flex;
   justify-content: center;
   border-radius: 10px 10px 0 0;
-  margin-top: 1em;
 }
 
-footer a {
+.window--footer a {
   color: var(--color-font);
 }

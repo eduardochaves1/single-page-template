@@ -15,6 +15,7 @@
   align-items: center;
   bottom: min(3%, .8em);
   right: max(1%, .5em);
+  z-index: 99;
 }
 
 .github-floating-icon {
