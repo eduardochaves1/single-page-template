@@ -20,7 +20,6 @@
 
 .github-floating-icon {
   height: 1.5rem;
-  filter: brightness(100);
   animation: spin 4s linear infinite;
   transform: rotateY(1deg);
   transform-origin: center;
@@ -37,7 +36,7 @@
   font-size: 0;
   opacity: 0;
   transform: translateY(2px);
-  transition: 400ms ease-in-out;
+  transition: 450ms ease-in-out;
 }
 
 .github-floating-btn:hover .github-floating-text {

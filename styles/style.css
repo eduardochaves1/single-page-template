@@ -25,12 +25,11 @@ body {
 /* WINDOW HEADER */
 .window--header {
   background-color: hsl(220 10% 50%);
-  height: 20px;
   border-radius: 10px 10px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5em .8em;
+  padding: .6em .8em;
 }
 
 .balls {
@@ -53,12 +52,13 @@ body {
   background-color: hsl(120 100% 50%);
 }
 
-.my-logo-link {
-  align-self: stretch;
+a.my-logo-link {
+  display: flex;
+  align-items: center;
 }
 
-.my-logo {
-  height: 20px;
+img.my-logo {
+  height: 15px;
 }
 /* WINDOW HEADER - END */
 
@@ -156,11 +156,11 @@ ol>li::marker {
 }
 
 .window--footer {
-  background-color: var(--color-1);
   font-weight: bold;
-  padding: .5em 2em;
+  background-color: var(--color-1);
   display: flex;
   justify-content: center;
+  padding: 1.2em .8em;
   border-radius: 10px 10px 0 0;
 }
 
