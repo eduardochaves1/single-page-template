@@ -6,7 +6,7 @@
   padding: .8em;
 
   text-decoration: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: monospace;
   color: whitesmoke;
   line-height: 1rem;
   
@@ -35,7 +35,6 @@
   margin: 0rem;
   font-size: 0;
   opacity: 0;
-  transform: translateY(2px);
   transition: 450ms ease-in-out;
 }
 
